@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 
-export default function Calculator() {
+export default function Calculator({ onSaveWorkout }) {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
   const [bmi, setBmi] = useState(null);
   const [rating, setRating] = useState("");
+
+  useEffect(() => {
+    fetch("/workout-list.json")
+      .then((response) => response.json())
+      .then((data) => setWorkoutPlans(data))
+      .catch((error) => console.error("Error fetching workout plans:", error));
+  }, []);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,9 +29,22 @@ export default function Calculator() {
       }
     )
       .then((res) => res.json())
-      .then((bmi) => {
-        setBmi(bmi);
-        setRating(getBmiRating(bmi));
+      .then((data) => {
+        if (data && data.bmi) {
+          const calculatedBmi = data.bmi;
+          setBmi(calculatedBmi);
+          const calculatedRating = getBmiRating(calculatedBmi);
+          setRating(calculatedRating);
+
+          onSaveWorkout({
+            height,
+            weight,
+            bmi: calculatedBmi,
+            rating: calculatedRating,
+          });
+        } else {
+          console.error("Invalid response from API");
+        }
       })
       .catch((error) => console.error("Error fetching data:", error));
   };
@@ -42,14 +63,14 @@ export default function Calculator() {
       <form onSubmit={handleSubmit}>
         <input
           type="number"
-          placeholder="Enter your height(cm)"
+          placeholder="Enter your height (cm)"
           name="height"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
         />
         <input
           type="number"
-          placeholder="Enter your weight(kg)"
+          placeholder="Enter your weight (kg)"
           name="weight"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
@@ -58,8 +79,12 @@ export default function Calculator() {
       </form>
 
       <div>
-        <h4>Your BMI:{bmi.toFixed(2)}</h4>
-        <h3>Rating:{rating }</h3>
+        {bmi && (
+          <>
+            <h4>Your BMI: {bmi.toFixed(2)}</h4>
+            <h3>Rating: {rating}</h3>
+          </>
+        )}
       </div>
     </div>
   );
