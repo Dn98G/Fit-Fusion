@@ -39,7 +39,7 @@ export default function Calculator() {
     <div>
       <h2>BMI Calculator</h2>
       <h4>Enter your weight and height to get your current BMI</h4>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="number"
           placeholder="Enter your height(cm)"
