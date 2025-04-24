@@ -1,16 +1,15 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f6ff;
-  margin: 0;
-  padding: 0;
-  color: #2d2d2d;
-}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-.workout-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 2rem;
+  color-scheme: light dark;
+  color: rgba(144, 175, 130, 0.808);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .workout-card {
@@ -25,15 +24,21 @@ body {
   transform: translateY(-5px);
 }
 
-.workout-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZyMOMsAapCslvT_4QOodFUjpua6w7yP0tw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZxCr8Ma8nzSQNBrEJkSEwhWwALyvEnOCAmw&s");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.workout-details {
-  padding: 1rem;
-}
+
 
 .workout-title {
   font-size: 1.25rem;
@@ -45,6 +50,8 @@ body {
 .workout-focus {
   font-size: 0.95rem;
   font-weight: 500;
+  font-family: inherit;
+  background-color: #775959;
   color: #555;
   margin-bottom: 0.5rem;
 }
@@ -66,6 +73,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.select-button:hover {
-  background-color: #5c0ab4;
+button:hover {
+  border-color: #17a30b;
 }
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
