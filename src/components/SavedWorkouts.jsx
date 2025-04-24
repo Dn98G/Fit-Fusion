@@ -1,4 +1,20 @@
 export default function SavedWorkouts({ saved }) {
+
+  const buttonClicked = () => {
+    fetch("http://localhost:3002/savedworkouts", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(workout),
+    })
+      .then((res) => res.json())
+      .then((workout) => removeWorkout(workout))
+      .catch(err => console.error("Error loading saved workouts:", err));
+    const removeWorkout = () => {
+    }
+   };
+
   return (
     <div>
       <h2>Saved Workouts</h2>
@@ -9,6 +25,7 @@ export default function SavedWorkouts({ saved }) {
           {saved.map((workout, index) => (
             <li key={index}>
               <strong>{workout.workout}</strong>: {workout.brief_description || workout.description}
+              <button onClick={buttonClicked}>Remove</button>
             </li>
           ))}
         </ul>
