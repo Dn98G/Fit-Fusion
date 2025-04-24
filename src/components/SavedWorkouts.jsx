@@ -1,36 +1,37 @@
-export default function SavedWorkouts({ saved }) {
+import React from "react";
 
-  const buttonClicked = () => {
-    removeWorkout()
-   };
-
-  const removeWorkout = () => {
-    fetch("http://localhost:3002/savedworkouts", {
+export default function SavedWorkouts({ saved, setSaved }) {
+  const removeWorkout = (id) => {
+    fetch(`http://localhost:3001/savedworkouts/${id}`, {
       method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(),
     })
-      .then((res) => res.json())
-      .then((workout) => removeWorkout(workout))
-      .catch(err => console.error("Error loading saved workouts:", err));
-   };
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to delete workout");
+        setSaved(saved.filter((workout) => workout.id !== id));
+      })
+      .catch((err) => console.error("Error deleting workout:", err));
+  };
 
   return (
     <div>
       <h2>Saved Workouts</h2>
-      {saved.length === 0 ? (
-        <p>No workouts saved yet.</p>
-      ) : (
+
+      {saved && saved.length > 0 ? (
         <ul>
-          {saved.map((workout, index) => (
-            <li key={index}>
-              <strong>{workout.workout}</strong>: {workout.brief_description || workout.description}
-              <button onClick={buttonClicked}>Remove</button>
+          {saved.map((workout) => (
+            <li key={workout.id}>
+              <div>
+                <strong>{workout.workout}</strong>:{" "}
+                {workout.brief_description || workout.description}
+              </div>
+              <button onClick={() => removeWorkout(workout.id)}>
+                Remove
+              </button>
             </li>
           ))}
         </ul>
+      ) : (
+        <p>No workouts saved yet.</p>
       )}
     </div>
   );
