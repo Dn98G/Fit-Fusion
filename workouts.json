@@ -1,221 +1,306 @@
 {
-    "workouts": {
-      "mild_intensity": [
-        {
-          "muscle_focus": "Foundation Flow",
-          "workout": "Gentle Movement",
-          "brief_description": "Light cardio and stretching for overall well-being.",
-          "full_details": "Engage in a 20-minute brisk walk at a comfortable pace, followed by 10 minutes of light stretching, focusing on major muscle groups and holding each stretch for 20-30 seconds.",
-          "image_url": "PLACEHOLDER_GENTLE_MOVEMENT_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Bodyweight Basics",
-          "brief_description": "Fundamental bodyweight exercises for strength.",
-          "full_details": "Perform 2 rounds of the following: 8-10 bodyweight squats, ensuring proper form with chest up and back straight; 8-10 wall push-ups against a sturdy wall; and a 20-second plank, maintaining a straight line from head to heels.",
-          "image_url": "PLACEHOLDER_BODYWEIGHT_BASICS_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Low Impact Cardio",
-          "brief_description": "Easy cycling for cardiovascular health.",
-          "full_details": "Enjoy a 25-minute cycling session at a comfortable pace on a stationary bike or a flat terrain, focusing on maintaining a steady rhythm.",
-          "image_url": "PLACEHOLDER_LOW_IMPACT_CARDIO_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Flexibility Fuel",
-          "workout": "Flexibility Focus",
-          "brief_description": "Gentle yoga or stretching to improve range of motion.",
-          "full_details": "Dedicate 20 minutes to gentle yoga poses or static stretching, holding each stretch for 20-30 seconds to improve flexibility and range of motion.",
-          "image_url": "PLACEHOLDER_FLEXIBILITY_FOCUS_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Light Strength",
-          "brief_description": "Basic strength exercises using bodyweight.",
-          "full_details": "Complete 2 rounds of: 6-8 walking lunges per leg, focusing on controlled movement; 6-8 chair dips using a stable chair; and 12 calf raises, standing on a flat surface and lifting up onto your toes.",
-          "image_url": "PLACEHOLDER_LIGHT_STRENGTH_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Active Walk",
-          "brief_description": "Moderate-paced walking with slight elevation.",
-          "full_details": "Go for a 30-minute moderate-paced walk, incorporating some gentle hills or slight inclines to elevate your heart rate slightly.",
-          "image_url": "PLACEHOLDER_ACTIVE_WALK_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Core Connect",
-          "workout": "Core Engagement",
-          "brief_description": "Exercises to strengthen the core muscles.",
-          "full_details": "Perform 2 rounds of: 12 crunches, focusing on controlled movement; 10 leg raises, keeping your lower back pressed against the floor; and 8 bird-dogs per side, maintaining balance and a straight line from hand to opposite heel.",
-          "image_url": "PLACEHOLDER_CORE_ENGAGEMENT_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Easy Cycling",
-          "brief_description": "Relaxed cycling for light activity.",
-          "full_details": "Enjoy a 30-minute leisurely cycling session on a flat surface, focusing on a relaxed and comfortable pace.",
-          "image_url": "PLACEHOLDER_EASY_CYCLING_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Flexibility Fuel",
-          "workout": "Full Body Stretch",
-          "brief_description": "Comprehensive stretching routine for all major muscles.",
-          "full_details": "Spend 25 minutes holding various stretches that target all major muscle groups, ensuring you feel a gentle pull without any pain, and holding each stretch for 20-30 seconds.",
-          "image_url": "PLACEHOLDER_FULL_BODY_STRETCH_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Light Dumbbell Workout",
-          "brief_description": "Simple strength exercises using light dumbbells.",
-          "full_details": "Complete 2 rounds of: 10 bicep curls using light dumbbells with controlled movement; 10 triceps extensions, either overhead or behind the head with one dumbbell; and 8 shoulder raises (front or lateral) with light dumbbells, maintaining good posture.",
-          "image_url": "PLACEHOLDER_LIGHT_DUMBBELL_WORKOUT_IMAGE_URL"
-        }
-      ],
-      "medium_intensity": [
-        {
-          "muscle_focus": "Power Push",
-          "workout": "Circuit Training",
-          "brief_description": "A mix of cardio and bodyweight strength exercises.",
-          "full_details": "Complete 3 rounds of: 30 seconds of jumping jacks to warm up; 12 bodyweight squats with good form; as many push-ups as possible (AMRAP) with proper technique; and 10 walking lunges per leg, focusing on controlled steps.",
-          "image_url": "PLACEHOLDER_CIRCUIT_TRAINING_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Moderate Cardio",
-          "brief_description": "Jogging or brisk walking with inclines.",
-          "full_details": "Engage in 30 minutes of jogging at a moderate pace or brisk walking, incorporating some inclines on a treadmill or hilly terrain to increase intensity.",
-          "image_url": "PLACEHOLDER_MODERATE_CARDIO_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Upper Body Strength",
-          "brief_description": "Strength training focusing on the upper body.",
-          "full_details": "Perform 3 rounds of: 10 dumbbell rows per arm, focusing on pulling with your back muscles; 10 overhead presses with dumbbells, maintaining control; 12 bicep curls with moderate weight; and 12 triceps extensions, ensuring full range of motion.",
-          "image_url": "PLACEHOLDER_UPPER_BODY_STRENGTH_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Active Restore",
-          "workout": "Active Recovery",
-          "brief_description": "Light activity and dynamic stretching for recovery.",
-          "full_details": "Engage in 30 minutes of light swimming at a relaxed pace or dynamic stretching exercises like arm circles, leg swings, and torso twists to improve blood flow and flexibility.",
-          "image_url": "PLACEHOLDER_ACTIVE_RECOVERY_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Lower Body Strength",
-          "brief_description": "Strength exercises targeting the lower body.",
-          "full_details": "Complete 3 rounds of: 15 glute bridges, squeezing your glutes at the top; 10 step-ups per leg onto a stable box or step; 8 deadlifts with light to moderate weight, maintaining proper form; and 15 calf raises, focusing on a full range of motion.",
-          "image_url": "PLACEHOLDER_LOWER_BODY_STRENGTH_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Interval Running",
-          "brief_description": "Alternating periods of jogging and running.",
-          "full_details": "Perform 5 intervals of 4 minutes of jogging at a moderate pace followed by 1 minute of running at a faster pace. Ensure a proper warm-up and cool-down.",
-          "image_url": "PLACEHOLDER_INTERVAL_RUNNING_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Sculpt & Tone",
-          "workout": "Full Body Dumbbell Workout",
-          "brief_description": "Strength training for the whole body using dumbbells.",
-          "full_details": "Complete 3 rounds of: 12 dumbbell squats, maintaining good form; 10 dumbbell lunges per leg, with controlled steps; 10 dumbbell bench presses on a flat surface; and 10 dumbbell rows per arm, focusing on engaging your back.",
-          "image_url": "PLACEHOLDER_FULL_BODY_DUMBBELL_WORKOUT_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Cycling Intervals",
-          "brief_description": "Alternating moderate and fast-paced cycling.",
-          "full_details": "Perform 6 intervals of 3 minutes of cycling at a moderate pace followed by 1 minute of cycling at a fast, challenging pace. Include a warm-up and cool-down.",
-          "image_url": "PLACEHOLDER_CYCLING_INTERVALS_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Core Connect",
-          "workout": "Pilates",
-          "brief_description": "Mat-based exercises for core strength and flexibility.",
-          "full_details": "Engage in a 40-minute mat-based Pilates routine, focusing on core strength, flexibility, and controlled movements.",
-          "image_url": "PLACEHOLDER_PILATES_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Power Push",
-          "workout": "Bodyweight and Core",
-          "brief_description": "Bodyweight exercises combined with core work.",
-          "full_details": "Complete 3 rounds of: 8 burpees with proper form; a 45-second plank, maintaining a straight line; 15 Russian twists per side, engaging your obliques; and 30 seconds of mountain climbers, driving your knees towards your chest.",
-          "image_url": "PLACEHOLDER_BODYWEIGHT_AND_CORE_IMAGE_URL"
-        }
-      ],
-      "intense_intensity": [
-        {
-          "muscle_focus": "Blaze Burst",
-          "workout": "High-Intensity Interval Training (HIIT)",
-          "brief_description": "Short bursts of intense exercise with brief rests.",
-          "full_details": "Repeat the following circuit 4 times with a 30-second rest between exercises and rounds: 30 seconds of burpees, 30 seconds of mountain climbers, and 30 seconds of squat jumps, focusing on maximum effort during work periods.",
-          "image_url": "PLACEHOLDER_HIIT_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Longer Cardio",
-          "brief_description": "Sustained high-intensity cardiovascular exercise.",
-          "full_details": "Engage in a continuous 45-minute run at a challenging pace or high-intensity cycling, maintaining a consistent effort throughout.",
-          "image_url": "PLACEHOLDER_LONGER_CARDIO_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Strength Surge",
-          "workout": "Strength & Conditioning",
-          "brief_description": "Compound strength exercises with challenging weights.",
-          "full_details": "Perform 3 rounds of: 8 barbell squats with proper form and challenging weight; 8 barbell bench presses; as many pull-ups as possible (AMRAP) with good technique; and 8 barbell overhead presses with control.",
-          "image_url": "PLACEHOLDER_STRENGTH_AND_CONDITIONING_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Active Restore",
-          "workout": "Active Recovery",
-          "brief_description": "Foam rolling and deep stretching for muscle recovery.",
-          "full_details": "Spend 40 minutes on foam rolling major muscle groups and performing deep static stretches, holding each stretch for 30-45 seconds to aid recovery and improve flexibility.",
-          "image_url": "PLACEHOLDER_ACTIVE_RECOVERY_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Power Push",
-          "workout": "Plyometrics & Strength",
-          "brief_description": "Explosive exercises combined with strength training.",
-          "full_details": "Complete 3 rounds of: 8 box jumps onto a stable box of appropriate height; 10 lateral bounds per leg, focusing on explosive movement; 10 Romanian deadlifts with proper form; and 12 walking lunges per leg with a focus on power.",
-          "image_url": "PLACEHOLDER_PLYOMETRICS_AND_STRENGTH_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Hill Repeats",
-          "brief_description": "Running uphill for intense cardiovascular and leg work.",
-          "full_details": "Find a moderate hill and run uphill at a challenging pace for 1 minute, then walk back down to recover. Repeat this cycle 6 times, ensuring a proper warm-up beforehand.",
-          "image_url": "PLACEHOLDER_HILL_REPEATS_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Strength Surge",
-          "workout": "Olympic Lifts & Accessory Work",
-          "brief_description": "Technical weightlifting with supporting exercises.",
-          "full_details": "Perform 5 sets of 3 reps of the snatch, focusing on technique; followed by 5 sets of 3 reps of the clean & jerk, again prioritizing form. Finish with 3 rounds of 12 back extensions and as many ab wheel rollouts as possible (AMRAP) with good control.",
-          "image_url": "PLACEHOLDER_OLYMPIC_LIFTS_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Endurance Engine",
-          "workout": "Tempo Run",
-          "brief_description": "Sustained fast-paced running to improve endurance.",
-          "full_details": "Engage in a sustained 20-minute tempo run at a comfortably hard pace – you should be able to speak only in short sentences. Include a warm-up and cool-down.",
-          "image_url": "PLACEHOLDER_TEMPO_RUN_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Blaze Burst",
-          "workout": "CrossFit Style Workout",
-          "brief_description": "High-intensity workout combining various exercises.",
-          "full_details": "Complete as many rounds as possible (AMRAP) in 20 minutes of the following: 5 strict pull-ups (use assistance if needed), 10 push-ups with good form, and 15 air squats.",
-          "image_url": "PLACEHOLDER_CROSSFIT_STYLE_WORKOUT_IMAGE_URL"
-        },
-        {
-          "muscle_focus": "Strength Surge",
-          "workout": "Strength Circuit",
-          "brief_description": "A circuit of heavy compound strength exercises.",
-          "full_details": "Perform 4 rounds with minimal rest between exercises: 5 deadlifts with a challenging weight, 8 front squats with good form, 8 push presses with control, and 8 barbell rows, focusing on engaging your back muscles.",
-          "image_url": "PLACEHOLDER_STRENGTH_CIRCUIT_IMAGE_URL"
-        }
-      ]
+  "workouts": [
+    {
+      "id": 1,
+      "intensity": "mild",
+      "muscle_focus": "Foundation Flow",
+      "workout": "Gentle Movement",
+      "description": "Light cardio and stretching for overall well-being.",
+      "details": "Engage in a 20-minute brisk walk at a comfortable pace, followed by 10 minutes of light stretching, focusing on major muscle groups and holding each stretch for 20-30 seconds.",
+      "image_url": "PLACEHOLDER_GENTLE_MOVEMENT_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 2,
+      "intensity": "mild",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Bodyweight Basics",
+      "description": "Fundamental bodyweight exercises for strength.",
+      "details": "Perform 2 rounds of the following: 8-10 bodyweight squats, ensuring proper form with chest up and back straight; 8-10 wall push-ups against a sturdy wall; and a 20-second plank, maintaining a straight line from head to heels.",
+      "image_url": "PLACEHOLDER_BODYWEIGHT_BASICS_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 3,
+      "intensity": "mild",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Low Impact Cardio",
+      "description": "Easy cycling for cardiovascular health.",
+      "details": "Enjoy a 25-minute cycling session at a comfortable pace on a stationary bike or a flat terrain, focusing on maintaining a steady rhythm.",
+      "image_url": "PLACEHOLDER_LOW_IMPACT_CARDIO_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 4,
+      "intensity": "mild",
+      "muscle_focus": "Flexibility Fuel",
+      "workout": "Flexibility Focus",
+      "description": "Gentle yoga or stretching to improve range of motion.",
+      "details": "Dedicate 20 minutes to gentle yoga poses or static stretching, holding each stretch for 20-30 seconds to improve flexibility and range of motion.",
+      "image_url": "PLACEHOLDER_FLEXIBILITY_FOCUS_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 5,
+      "intensity": "mild",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Light Strength",
+      "description": "Basic strength exercises using bodyweight.",
+      "details": "Complete 2 rounds of: 6-8 walking lunges per leg, focusing on controlled movement; 6-8 chair dips using a stable chair; and 12 calf raises, standing on a flat surface and lifting up onto your toes.",
+      "image_url": "PLACEHOLDER_LIGHT_STRENGTH_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 6,
+      "intensity": "mild",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Active Walk",
+      "description": "Moderate-paced walking with slight elevation.",
+      "details": "Go for a 30-minute moderate-paced walk, incorporating some gentle hills or slight inclines to elevate your heart rate slightly.",
+      "image_url": "PLACEHOLDER_ACTIVE_WALK_IMAGE_URL",
+      "fitness_level": "underweight, overweight, obese"
+    },
+    {
+      "id": 7,
+      "intensity": "mild",
+      "muscle_focus": "Core Connect",
+      "workout": "Core Engagement",
+      "description": "Exercises to strengthen the core muscles.",
+      "details": "Perform 2 rounds of: 12 crunches, focusing on controlled movement; 10 leg raises, keeping your lower back pressed against the floor; and 8 bird-dogs per side, maintaining balance and a straight line from hand to opposite heel.",
+      "image_url": "PLACEHOLDER_CORE_ENGAGEMENT_IMAGE_URL",
+      "fitness_level": "underweight, overweight, obese"
+    },
+    {
+      "id": 8,
+      "intensity": "mild",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Easy Cycling",
+      "description": "Relaxed cycling for light activity.",
+      "details": "Enjoy a 30-minute leisurely cycling session on a flat surface, focusing on a relaxed and comfortable pace.",
+      "image_url": "PLACEHOLDER_EASY_CYCLING_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 9,
+      "intensity": "mild",
+      "muscle_focus": "Flexibility Fuel",
+      "workout": "Full Body Stretch",
+      "description": "Comprehensive stretching routine for all major muscles.",
+      "details": "Spend 25 minutes holding various stretches that target all major muscle groups, ensuring you feel a gentle pull without any pain, and holding each stretch for 20-30 seconds.",
+      "image_url": "PLACEHOLDER_FULL_BODY_STRETCH_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 10,
+      "intensity": "mild",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Light Dumbbell Workout",
+      "description": "Simple strength exercises using light dumbbells.",
+      "details": "Complete 2 rounds of: 10 bicep curls using light dumbbells with controlled movement; 10 triceps extensions, either overhead or behind the head with one dumbbell; and 8 shoulder raises (front or lateral) with light dumbbells, maintaining good posture.",
+      "image_url": "PLACEHOLDER_LIGHT_DUMBBELL_WORKOUT_IMAGE_URL",
+      "fitness_level": "underweight, obese"
+    },
+    {
+      "id": 11,
+      "intensity": "medium",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Cycling Intervals",
+      "description": "Moderate cycling with intervals.",
+      "details": "Cycle at a moderate pace for 5 minutes, then increase intensity for 2 minutes before returning to the moderate pace. Repeat the cycle for 30 minutes.",
+      "image_url": "PLACEHOLDER_CYCLING_INTERVALS_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 12,
+      "intensity": "medium",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Squat and Press",
+      "description": "A total-body workout for strength and toning.",
+      "details": "Perform 3 rounds of: 12 squats (bodyweight or with light weights), followed by 10 overhead shoulder presses with dumbbells.",
+      "image_url": "PLACEHOLDER_SQUAT_PRESS_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 13,
+      "intensity": "medium",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Moderate Jogging",
+      "description": "A moderate-paced jog to improve endurance.",
+      "details": "Jog at a moderate pace for 20-30 minutes, adjusting pace as needed to maintain a steady heart rate.",
+      "image_url": "PLACEHOLDER_MODERATE_JOGGING_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 14,
+      "intensity": "medium",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Lunges and Push-ups",
+      "description": "Strength training with lunges and push-ups.",
+      "details": "Complete 3 rounds of: 12 walking lunges per leg and 10 push-ups. Modify the push-ups by performing them on the knees if necessary.",
+      "image_url": "PLACEHOLDER_LUNGES_PUSHUPS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 15,
+      "intensity": "medium",
+      "muscle_focus": "Flexibility Fuel",
+      "workout": "Yoga Flow",
+      "description": "A moderate yoga flow for strength and flexibility.",
+      "details": "Perform 20 minutes of yoga with a focus on both stretching and strength-building poses, such as Warrior poses and Downward Dog.",
+      "image_url": "PLACEHOLDER_YOGA_FLOW_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 16,
+      "intensity": "medium",
+      "muscle_focus": "Core Connect",
+      "workout": "Core Strengthening Circuit",
+      "description": "Targeting the core muscles for strength and endurance.",
+      "details": "Complete 3 rounds of: 15 crunches, 20 bicycle crunches, and 20 second plank holds.",
+      "image_url": "PLACEHOLDER_CORE_STRENGTHENING_CIRCUIT_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 17,
+      "intensity": "medium",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Interval Running",
+      "description": "Run with high-intensity bursts.",
+      "details": "Run at a high intensity for 1 minute, then walk for 2 minutes to recover. Repeat this cycle for 30 minutes to build stamina and endurance.",
+      "image_url": "PLACEHOLDER_INTERVAL_RUNNING_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 18,
+      "intensity": "medium",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Weighted Squats",
+      "description": "Strengthen legs and glutes with added resistance.",
+      "details": "Perform 3 sets of 12 weighted squats, using a barbell or dumbbells to add resistance, keeping knees aligned with toes and chest upright.",
+      "image_url": "PLACEHOLDER_WEIGHTED_SQUATS_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 19,
+      "intensity": "medium",
+      "muscle_focus": "Core Connect",
+      "workout": "Russian Twists",
+      "description": "Engage the core with rotational movements.",
+      "details": "Sit on the floor with your feet flat, lean back slightly, and twist your torso side to side while holding a weight or medicine ball, performing 20 twists per side.",
+      "image_url": "PLACEHOLDER_RUSSIAN_TWISTS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 20,
+      "intensity": "medium",
+      "muscle_focus": "Flexibility Fuel",
+      "workout": "Hip Openers and Stretching",
+      "description": "Stretch the hips and lower body for flexibility.",
+      "details": "Focus on hip-opening yoga poses like Pigeon Pose and Butterfly Pose, holding each for 30-60 seconds to improve flexibility and relieve tension.",
+      "image_url": "PLACEHOLDER_HIP_OPENERS_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 21,
+      "intensity": "medium",
+      "muscle_focus": "Endurance Engine",
+      "workout": "Jump Rope Intervals",
+      "description": "High-intensity jump rope intervals for cardio.",
+      "details": "Jump rope at a moderate pace for 1 minute, then rest for 30 seconds. Repeat for 30 minutes to improve cardiovascular fitness and endurance.",
+      "image_url": "PLACEHOLDER_JUMP_ROPE_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 22,
+      "intensity": "medium",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Resistance Band Rows",
+      "description": "Target the upper back with resistance bands.",
+      "details": "Use a resistance band to perform 3 sets of 12 rows, keeping your elbows close to your body and engaging your shoulder blades.",
+      "image_url": "PLACEHOLDER_RESISTANCE_BAND_ROWS_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 23,
+      "intensity": "medium",
+      "muscle_focus": "Core Connect",
+      "workout": "Leg Raises",
+      "description": "Strengthen the lower abdominal muscles.",
+      "details": "Lie on your back and lift your legs slowly to a 90-degree angle, then lower them back down without touching the floor. Perform 3 sets of 15.",
+      "image_url": "PLACEHOLDER_LEG_RAISES_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 24,
+      "intensity": "medium",
+      "muscle_focus": "Flexibility Fuel",
+      "workout": "Seated Hamstring Stretch",
+      "description": "Stretch the hamstrings for better flexibility.",
+      "details": "Sit on the floor with one leg extended and the other bent, reaching forward to touch your toes. Hold for 30 seconds on each side.",
+      "image_url": "PLACEHOLDER_SEATED_HAMSTRING_IMAGE_URL",
+      "fitness_level": "overweight, obese"
+    },
+    {
+      "id": 25,
+      "intensity": "high",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Burpees",
+      "description": "Full-body workout for strength and cardio.",
+      "details": "Perform 3 sets of 12 burpees, focusing on explosive movement from the squat to the jump and maintaining proper form throughout.",
+      "image_url": "PLACEHOLDER_BURPEES_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 26,
+      "intensity": "high",
+      "muscle_focus": "Endurance Engine",
+      "workout": "HIIT Sprints",
+      "description": "High-intensity interval training with sprinting.",
+      "details": "Sprint at maximum effort for 30 seconds, then walk for 1 minute to recover. Repeat for 20 minutes to improve speed and stamina.",
+      "image_url": "PLACEHOLDER_HIIT_SPRINTS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 27,
+      "intensity": "high",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Jumping Jacks",
+      "description": "Cardio exercise to increase heart rate.",
+      "details": "Perform jumping jacks for 30 seconds, followed by a 15-second rest. Repeat for 10 rounds to boost cardiovascular fitness.",
+      "image_url": "PLACEHOLDER_JUMPING_JACKS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 28,
+      "intensity": "high",
+      "muscle_focus": "Core Connect",
+      "workout": "Mountain Climbers",
+      "description": "Core strengthening with an added cardio burst.",
+      "details": "Perform 3 sets of 30 seconds of mountain climbers, driving your knees towards your chest while maintaining a plank position.",
+      "image_url": "PLACEHOLDER_MOUNTAIN_CLIMBERS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 29,
+      "intensity": "high",
+      "muscle_focus": "Sculpt & Tone",
+      "workout": "Deadlifts",
+      "description": "Strength training for the back, glutes, and legs.",
+      "details": "Perform 4 sets of 10 deadlifts with appropriate weight, focusing on form with a straight back and proper posture throughout the movement.",
+      "image_url": "PLACEHOLDER_DEADLIFTS_IMAGE_URL",
+      "fitness_level": "overweight"
+    },
+    {
+      "id": 30,
+      "intensity": "high",
+      "muscle_focus": "Core Connect",
+      "workout": "V-ups",
+      "description": "Advanced core exercise for full abdominal engagement.",
+      "details": "Perform 3 sets of 15 V-ups, lifting both legs and upper body to meet in the middle while keeping legs straight and controlling the descent.",
+      "image_url": "PLACEHOLDER_V_UPS_IMAGE_URL",
+      "fitness_level": "overweight"
     }
-  }
+  ]
+}
   
+

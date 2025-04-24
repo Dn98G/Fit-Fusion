@@ -8,7 +8,7 @@ export default function SavedWorkouts({ saved }) {
         <ul>
           {saved.map((workout, index) => (
             <li key={index}>
-              <strong>{workout.name}</strong>: {workout.description}
+              <strong>{workout.workout}</strong>: {workout.brief_description || workout.description}
             </li>
           ))}
         </ul>

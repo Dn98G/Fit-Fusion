@@ -5,6 +5,7 @@ export default function Calculator({ onRatingUpdate }) {
   const [weight, setWeight] = useState("");
   const [bmi, setBmi] = useState(null);
   const [rating, setRating] = useState("");
+  const [error, setError] = useState("");
 
   const getBmiRating = (bmi) => {
     if (bmi < 18.5) return "Underweight";
@@ -15,6 +16,12 @@ export default function Calculator({ onRatingUpdate }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!height || !weight || height <= 0 || weight <= 0) {
+      setError("Please enter valid positive values for height and weight.");
+      return;
+    }
+
     const heightInMeters = height / 100;
     const calculatedBmi = weight / (heightInMeters * heightInMeters);
     const bmiRating = getBmiRating(calculatedBmi);
@@ -22,6 +29,7 @@ export default function Calculator({ onRatingUpdate }) {
     setBmi(calculatedBmi);
     setRating(bmiRating);
     onRatingUpdate(bmiRating);
+    setError(""); 
   };
 
   return (
@@ -42,7 +50,10 @@ export default function Calculator({ onRatingUpdate }) {
         />
         <button type="submit">Calculate BMI</button>
       </form>
-      {bmi && (
+
+      {error && <p style={{ color: "red" }}>{error}</p>}
+
+      {bmi && !error && (
         <div>
           <h4>Your BMI: {bmi.toFixed(2)}</h4>
           <h3>Rating: {rating}</h3>

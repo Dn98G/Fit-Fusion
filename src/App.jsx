@@ -1,24 +1,51 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Calculator from "./components/Calculator";
 import WorkoutSelector from "./components/WorkoutSelector";
-import SavedWorkouts from "./components/SavedWorkouts";
 
-export default function App() {
+function App() {
   const [bmiRating, setBmiRating] = useState("");
-  const [savedWorkouts, setSavedWorkouts] = useState([]);
+  const [selectedIntensity, setSelectedIntensity] = useState("mild");
+  const [workouts, setWorkouts] = useState([]);
 
-  const handleBmiRating = (rating) => setBmiRating(rating);
+  useEffect(() => {
+    fetch("http://localhost:3001/workouts")
+      .then((res) => res.json())
+      .then((data) => setWorkouts(data))
+      .catch((error) => console.error("Error fetching workouts:", error));
+  }, []);
 
-  const handleSaveWorkout = (workout) => {
-    setSavedWorkouts((prev) => [...prev, workout]);
+  const handleRatingUpdate = (rating) => {
+    setBmiRating(rating);
   };
+
+  const filteredWorkouts = workouts.filter(
+    (workout) => workout.intensity === selectedIntensity
+  );
 
   return (
     <div>
-      <h1>Fit Fusion App</h1>
-      <Calculator onRatingUpdate={handleBmiRating} />
-      <WorkoutSelector rating={bmiRating} onSaveWorkout={handleSaveWorkout} />
-      <SavedWorkouts saved={savedWorkouts} />
+      <h1>Fit Fusion</h1>
+      <Calculator onRatingUpdate={handleRatingUpdate} />
+
+      {bmiRating && (
+        <>
+          <h3>Recommended for: {bmiRating}</h3>
+
+          <label>Choose Intensity:</label>
+          <select
+            value={selectedIntensity}
+            onChange={(e) => setSelectedIntensity(e.target.value)}
+          >
+            <option value="mild">Mild</option>
+            <option value="medium">Medium</option>
+            <option value="intense">Intense</option>
+          </select>
+
+          <WorkoutSelector workouts={filteredWorkouts} />
+        </>
+      )}
     </div>
   );
 }
+
+export default App;
