@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SavedWorkouts({ saved, setSaved }) {
   const removeWorkout = (id) => {
-    fetch(`http://localhost:3001/savedworkouts/${id}`, {
+    fetch(`http://localhost:3001/sorkouts.json/${id}`, {
       method: "DELETE",
     })
       .then((res) => {

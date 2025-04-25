@@ -32,7 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZyMOMsAapCslvT_4QOodFUjpua6w7yP0tw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZxCr8Ma8nzSQNBrEJkSEwhWwALyvEnOCAmw&s");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQGoMNN6EfpyaBUjlcO4o2xBhZkPQo4xnkg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5j5UVcFXEn8e3Z-kNIMm1D0d76zJkOA_ZAw&s");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,8 +63,8 @@ body {
 }
 
 .select-button {
-  background-color: #6a0dad;
-  color: white;
+  background-color: #948639;
+  color: rgb(64, 122, 177);
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 6px;
