@@ -2,10 +2,8 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(144, 175, 130, 0.808);
-  
+  color: rgb(247, 151, 7);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +11,7 @@
 }
 
 .workout-card {
-  background-color: #ffffff;
+  background-color: #76b87f;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   overflow: hidden;
@@ -23,7 +21,11 @@
 .workout-card:hover {
   transform: translateY(-5px);
 }
-
+.workout-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 body {
   margin: 0;
   display: flex;
@@ -31,19 +33,17 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQGoMNN6EfpyaBUjlcO4o2xBhZkPQo4xnkg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5j5UVcFXEn8e3Z-kNIMm1D0d76zJkOA_ZAw&s");
+  background-image: url("https://cdn.thespaces.com/wp-content/uploads/2020/01/oktra_gymshark_lifiting_club_3-HERO.jpg");
   background-size: cover;
   background-position: center;
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
-
-
 
 .workout-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #6a0dad; 
+  color: #6a0dad;
   margin-bottom: 0.5rem;
 }
 
@@ -70,15 +70,27 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-button:hover {
-  border-color: #17a30b;
+.select-button:hover {
+  background-color: #6a7939;
 }
 
-button:focus,
-button:focus-visible {
+.select-button:focus,
+.select-button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.select-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .workout-card {
+    width: 90%;
+  }
+  .workout-title {
+    font-size: 1rem;
+  }
+}
