@@ -11,7 +11,7 @@ export default function SavedWorkouts({ saved, setSaved }) {
       })
       .catch((err) => console.error("Error deleting workout:", err));
   };
-
+    
   return (
     <div>
       <h2>Saved Workouts</h2>
