@@ -24,7 +24,7 @@ export default function WorkoutSelector({ workouts, onSave }) {
             <li key={workout.id}>
               <h4>{workout.workout}</h4>
               <p>Focus: {workout.muscle_focus}</p>
-              <p>{workout.brief_description || workout.description}</p>
+              <p>{workout.description}</p>
               {workout.image_url && (
                 <img src={workout.image_url} alt={workout.workout} />
               )}

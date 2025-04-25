@@ -40,15 +40,18 @@ export default function Calculator({ onRatingUpdate }) {
           type="number"
           placeholder="Height (cm)"
           value={height}
+          className="input"
           onChange={(e) => setHeight(e.target.value)}
         />
         <input
           type="number"
           placeholder="Weight (kg)"
           value={weight}
+          className="input"
           onChange={(e) => setWeight(e.target.value)}
         />
-        <button type="submit">Calculate BMI</button>
+        <button className="button" type="submit">Calculate BMI </button>
+        
       </form>
 
       {error && <p style={{ color: "red" }}>{error}</p>}

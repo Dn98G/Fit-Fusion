@@ -3,10 +3,11 @@
 **Fit Fusion** is a responsive React fitness web app that lets users calculate their BMI, get personalized workout recommendations, and save favorite workouts for later empowering users to make healther lifestyle choices.
 
 ## Assignment
- **Eugene K** -
- **Rahma M** -
- **Cheruiyot K** -
- **James K** -
+
+**Eugene K** - Did the BMI calculator and the Workouts.json.  
+ **Rahma M** - Did the routing and filled in the README file.
+**Cheruiyot K** - Did the fetching and saving workouts.
+**James K** - Did the overall styling and overall debugging.
 
 ---
 
@@ -20,7 +21,7 @@
 
 ---
 
-##  Tech Stack Used
+## Tech Stack Used
 
 - **React** (Hooks: `useState`, `useEffect`)
 - **React Router** for navigation
@@ -53,22 +54,26 @@ fit-fusion/
 ## Getting Started
 
 1. **Clone the repo**
+
    ```bash
    git clone git@github.com:kapombe-k/Fit-Fusion.git
    cd Fit-Fusion
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run JSON Server**
+
    ```bash
    npx json-server --watch db.json --port 3001
    ```
 
 4. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -105,4 +110,3 @@ Feel free to open issues or submit pull requests for bug fixes or enhancements.
 ---
 
 Credits @ Eugene k, Cheruiyot K, Rahma .M, James K 2025
-
