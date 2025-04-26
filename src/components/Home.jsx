@@ -1,6 +1,7 @@
 import React from "react";
-import ProgressBar from './ProgressBar'; // Progress Bar Component
-import QuoteCarousel from './QuoteCarousel'; // Motivational Quotes Carousel
+import ProgressBar from "./ProgressBar";
+import QuoteCarousel from "./QuoteCarousel";
+import { FaArrowDown } from "react-icons/fa"; 
 
 const Home = ({ handleProgress, progress }) => {
   return (
@@ -28,6 +29,10 @@ const Home = ({ handleProgress, progress }) => {
       </div>
 
       <QuoteCarousel />
+
+      <div className="arrow-down-container">
+        <FaArrowDown size={40} /> 
+      </div>
     </div>
   );
 };

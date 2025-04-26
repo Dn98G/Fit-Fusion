@@ -18,6 +18,8 @@
 - **Saved Workouts**: Select and save workout plans for easy access on a dedicated page.
 - **Routing**: Smooth client‑side navigation between Home, Workouts, and Saved pages using React Router.
 - **Images**: Each workout includes a matching image pulled from Pinterest or direct URLs.
+- **QuoteCarousel**:Displays motivational statements for daily motivation.
+- **ProgressBar** :updates in real-time, providing motivation and a clear sense of accomplishment.​
 
 ---
 
@@ -28,6 +30,7 @@
 - **Vite** for fast development
 - **JSON Server** (`db.json`) to simulate a backend API
 - **Plain CSS** for styling (purple theme)
+- **React Icons** to allow arrow navigation to other sections.
 
 ---
 
@@ -40,6 +43,7 @@ fit-fusion/
 │   ├── components/
 │   │   ├── Calculator.jsx
 │   │   ├── NavBar.jsx
+        |
 │   │   ├── SavedWorkouts.jsx
 │   │   └── WorkoutSelector.jsx
 │   ├── App.jsx

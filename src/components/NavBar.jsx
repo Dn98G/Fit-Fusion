@@ -1,20 +1,18 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const NavBar = () => {
   return (
-    <nav>
-      <h1>Fit Fusion</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/workouts">Workouts</Link>
-        </li>
-        <li>
-          <Link to="/saved">Saved</Link>
-        </li>
-      </ul>
+    <nav className="navbar">
+      <div className="navbar-title">Fit Fusion</div>
+      <div className="navbar-links">
+        <Link to="/">Home</Link>
+        <Link to="/calculator">BMI Calculator</Link>
+        <Link to="/workouts">Workouts</Link>
+        <Link to="/saved">Saved</Link>
+      </div>
     </nav>
   );
-}
+};
+
+export default NavBar;
