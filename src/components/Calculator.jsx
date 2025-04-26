@@ -1,67 +1,53 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
-export default function Calculator({ onRatingUpdate }) {
-  const [height, setHeight] = useState("");
-  const [weight, setWeight] = useState("");
+export default function Calculator() {
   const [bmi, setBmi] = useState(null);
-  const [rating, setRating] = useState("");
-  const [error, setError] = useState("");
+  const [weight, setWeight] = useState(70);
+  const [height, setHeight] = useState(170);
+  const [rating, setRating] = useState('');
 
-  const getBmiRating = (bmi) => {
-    if (bmi < 18.5) return "Underweight";
-    if (bmi >= 18.5 && bmi < 24.9) return "Normal weight";
-    if (bmi >= 25 && bmi < 29.9) return "Overweight";
-    return "Obese";
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!height || !weight || height <= 0 || weight <= 0) {
-      setError("Please enter valid positive values for height and weight.");
-      return;
-    }
-
+  const calculateBMI = () => {
     const heightInMeters = height / 100;
-    const calculatedBmi = weight / (heightInMeters * heightInMeters);
-    const bmiRating = getBmiRating(calculatedBmi);
+    const calculatedBMI = weight / (heightInMeters * heightInMeters);
+    setBmi(calculatedBMI.toFixed(2));
 
-    setBmi(calculatedBmi);
-    setRating(bmiRating);
-    onRatingUpdate(bmiRating);
-    setError(""); 
+    if (calculatedBMI < 18.5) setRating('Underweight');
+    else if (calculatedBMI >= 18.5 && calculatedBMI < 24.9) setRating('Normal weight');
+    else if (calculatedBMI >= 25 && calculatedBMI < 29.9) setRating('Overweight');
+    else setRating('Obese');
   };
 
   return (
-    <div>
-      <h2>BMI Calculator</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="number"
-          placeholder="Height (cm)"
-          value={height}
-          className="input"
-          onChange={(e) => setHeight(e.target.value)}
-        />
-        <input
-          type="number"
-          placeholder="Weight (kg)"
-          value={weight}
-          className="input"
-          onChange={(e) => setWeight(e.target.value)}
-        />
-        <button className="button" type="submit">Calculate BMI </button>
-        
-      </form>
-
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      {bmi && !error && (
-        <div>
-          <h4>Your BMI: {bmi.toFixed(2)}</h4>
-          <h3>Rating: {rating}</h3>
+    <div className="bmi-container">
+      <div className="card">
+        <h2>BMI Calculator</h2>
+        <div className="weight-age-container">
+          <div className="counter-card">
+            <h3>Weight</h3>
+            <div className="counter-buttons">
+              <button className="counter-button" onClick={() => setWeight(weight - 1)}>-</button>
+              <span>{weight} kg</span>
+              <button className="counter-button" onClick={() => setWeight(weight + 1)}>+</button>
+            </div>
+          </div>
+          <div className="counter-card">
+            <h3>Height</h3>
+            <div className="counter-buttons">
+              <button className="counter-button" onClick={() => setHeight(height - 1)}>-</button>
+              <span>{height} cm</span>
+              <button className="counter-button" onClick={() => setHeight(height + 1)}>+</button>
+            </div>
+          </div>
         </div>
-      )}
+        <button className="calculate-button" onClick={calculateBMI}>Calculate BMI</button>
+
+        {bmi && (
+          <div className="bmi-result">
+            <p>Your BMI: {bmi}</p>
+            <p>Rating: {rating}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

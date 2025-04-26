@@ -1,126 +1,209 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgb(247, 151, 7);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General App Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* ✅ white background */
+  color: #333;
 }
 
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
 .navbar {
-  background-color: #f8f5f500;
+  background-color: #7c3aed; /* Nice purple */
+  color: white;
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;     
-  align-items: center;        
-  color: rgb(247, 243, 10);
-  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .navbar-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;        
 }
-
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 20px;                  
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
 }
 
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
 
-.navbar-item {
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Pages */
+.home, .workouts, .saved, .bmi-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* BMI Calculator */
+.card {
+  background: #f3f4f6;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weight-age-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.counter-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.counter-card button {
+  background-color: #7c3aed;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.counter-card button:hover {
+  background-color: #5b21b6;
+}
+
+.calculate-button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* ✅ Centering the button properly */
+}
+
+.calculate-button:hover {
+  background-color: #5b21b6;
+}
+
+/* BMI Result */
+.bmi-result {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Home Page Special Styles */
+.intro-section {
+  background-image: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.intro-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 1rem;
   display: inline-block;
 }
 
-
-.navbar-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.navbar-link:hover {
-  color: #ff6347;            
-}
-
-
-
-.workout-card {
-  background-color: #2c6e35;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.workout-card:hover {
-  transform: translateY(5px);
-}
-.workout-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-image: url("https://cdn.thespaces.com/wp-content/uploads/2020/01/oktra_gymshark_lifiting_club_3-HERO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  
-}
-
-.workout-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #6a0dad;
-  margin-bottom: 0.5rem;
-}
-
-.workout-focus {
-  font-size: 0.95rem;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #775959;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.workout-description {
-  font-size: 0.9rem;
-  color: #777;
+.intro-content h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.select-button {
-  background-color: #948639;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 6px;
-  margin-left: 10px;
-  cursor: pointer;
+.intro-content p {
+  font-size: 1.2rem;
+}
+
+.importance-section, .goal-section, .quote-carousel {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 9999px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background-color: #6d28d9;
+  height: 100%;
+  text-align: center;
+  color: white;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  line-height: 20px;
+  transition: width 0.5s ease-in-out;
 }
 
-.select-button:hover {
-  background-color: #373f8f;
+.start-goal-button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #6d28d9;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.start-goal-button:hover {
+  background-color: #5b21b6;
+}
 
+/* Quote Carousel */
+.quote-carousel .quote-text {
+  font-size: 1.5rem;
+  color: #6d28d9;
+  font-style: italic;
+  margin-top: 1rem;
+  transition: opacity 0.5s ease;
+}

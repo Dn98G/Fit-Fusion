@@ -1,47 +1,26 @@
 import React from "react";
 
-export default function SavedWorkouts({ saved, setSaved }) {
-  const removeWorkout = async (id) => {
-    try {
-      const res = await fetch(`http://localhost:3001/savedWorkouts/${id}`, {
-        method: "DELETE",
-      });
-
-      if (!res.ok) {
-        throw new Error("Failed to delete workout");
-      }
-
-      // Update local state after deletion
-      const updatedSaved = saved.filter((workout) => workout.id !== id);
-      setSaved(updatedSaved);
-    } catch (err) {
-      console.error("Error deleting workout:", err);
-    }
+const SavedWorkouts = ({ saved, setSaved }) => {
+  const handleDelete = (id) => {
+    setSaved(saved.filter((workout) => workout.id !== id));
   };
 
   return (
-    <div>
-      <h2>Saved Workouts</h2>
-
-      {saved && saved.length > 0 ? (
-        <ul>
-          {saved.map((workout) => (
-            <li key={workout.id}>
-              <div>
-                <strong>{workout.workout}</strong>: {workout.description}
-              </div>
-              <button
-                className="button"
-                onClick={() => removeWorkout(workout.id)}
-              >
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
-      ) : (
+    <div className="saved-workouts">
+      <h3>Your Saved Workouts:</h3>
+      {saved.length === 0 ? (
         <p>No workouts saved yet.</p>
+      ) : (
+        saved.map((workout) => (
+          <div key={workout.id} className="saved-workout-card">
+            <h4>{workout.title}</h4>
+            <p>{workout.description}</p>
+            <button onClick={() => handleDelete(workout.id)}>Delete</button>
+          </div>
+        ))
       )}
     </div>
   );
-}
+};
+
+export default SavedWorkouts;

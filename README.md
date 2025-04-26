@@ -39,9 +39,9 @@ fit-fusion/
 ├── src/
 │   ├── components/
 │   │   ├── Calculator.jsx
-│   │   ├── WorkoutSelector.jsx
+│   │   ├── NavBar.jsx
 │   │   ├── SavedWorkouts.jsx
-│   │   └── NavBar.jsx
+│   │   └── WorkoutSelector.jsx
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css

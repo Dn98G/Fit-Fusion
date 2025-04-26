@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
-
 export default function WorkoutSelector({ workouts, onSave }) {
-  const [selectedWorkout, setSelectedWorkout] = useState(null)
+  const [selectedWorkout, setSelectedWorkout] = useState(null);
 
+  // Handles selecting a workout
   const handleSelect = (workout) => {
     setSelectedWorkout(workout);
   };
 
+  // Handles saving the selected workout to the saved list
   const handleSave = () => {
     if (selectedWorkout && onSave) {
       onSave(selectedWorkout);
-      setSelectedWorkout(null);
+      setSelectedWorkout(null); // Clear selected workout after saving
     }
   };
 
@@ -21,17 +22,19 @@ export default function WorkoutSelector({ workouts, onSave }) {
       <ul>
         {workouts.length > 0 ? (
           workouts.map((workout) => (
-            <li key={workout.id}>
+            <li key={workout.id} className="workout-item">
               <h4>{workout.workout}</h4>
               <p>Focus: {workout.muscle_focus}</p>
-              <p>{workout.description}</p>
+              <p>{workout.brief_description || workout.description}</p>
               {workout.image_url && (
-                <img src={workout.image_url} alt={workout.workout} />
+                <img src={workout.image_url} alt={workout.workout} className="workout-image" />
               )}
-              <button onClick={() => handleSelect(workout)}>
+              <button onClick={() => handleSelect(workout)} className="select-btn">
                 Select workout
               </button>
-              <button onClick={handleSave}>Save plan</button>
+              <button onClick={handleSave} className="save-btn">
+                Save plan
+              </button>
             </li>
           ))
         ) : (
@@ -40,7 +43,7 @@ export default function WorkoutSelector({ workouts, onSave }) {
       </ul>
 
       {selectedWorkout && (
-        <div>
+        <div className="selected-workout">
           <h3>Selected Workout</h3>
           <h4>{selectedWorkout.workout}</h4>
           <p>Focus: {selectedWorkout.muscle_focus}</p>
@@ -49,6 +52,7 @@ export default function WorkoutSelector({ workouts, onSave }) {
             <img
               src={selectedWorkout.image_url}
               alt={selectedWorkout.workout}
+              className="selected-workout-image"
             />
           )}
         </div>
@@ -56,4 +60,3 @@ export default function WorkoutSelector({ workouts, onSave }) {
     </div>
   );
 }
-
