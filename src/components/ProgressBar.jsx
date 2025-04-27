@@ -2,14 +2,16 @@ import React from "react";
 
 const ProgressBar = ({ progress }) => {
   return (
-    <div className="progress-bar-container">
-      <div className="progress-bar">
+    <div className="w-full max-w-md mx-auto text-center mt-8">
+      <div className="w-full bg-gray-300 rounded-full h-6 overflow-hidden shadow-inner">
         <div
-          className="progress-bar-fill"
+          className="bg-purple-600 h-full text-xs font-medium text-white text-center flex items-center justify-center transition-all duration-500"
           style={{ width: `${progress}%` }}
-        ></div>
+        >
+          {progress}%
+        </div>
       </div>
-      <p>{progress}% Progress</p>
+      <p className="mt-4 text-gray-700 font-semibold">{progress}% Progress</p>
     </div>
   );
 };

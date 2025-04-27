@@ -1,15 +1,24 @@
 import React from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const WorkoutCard = ({ workout, onSave }) => {
+  const handleSave = () => {
+    onSave(workout);
+    toast.success("Workout saved successfully!");
+  };
+
   return (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
       <img
-        src={workout.image_url || '/images/placeholder.jpg'}
+        src={workout.image_url || "/images/placeholder.jpg"}
         alt={workout.workout}
         className="w-full h-64 object-cover"
-        onError={(e) => { e.target.src = '/images/placeholder.jpg'; }}
+        onError={(e) => {
+          e.target.src = "/images/placeholder.jpg";
+        }}
       />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-gray-800 dark:text-white">
@@ -25,15 +34,12 @@ const WorkoutCard = ({ workout, onSave }) => {
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         <button
-          onClick={() => onSave(workout)}
+          onClick={handleSave}
           className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
         >
           Save Workout
         </button>
-        <a
-          href="#"
-          className="text-indigo-600 hover:text-indigo-800 text-sm"
-        >
+        <a href="#" className="text-indigo-600 hover:text-indigo-800 text-sm">
           Full Details
         </a>
       </div>
@@ -45,21 +51,22 @@ const WorkoutSelector = ({ workouts, onSave }) => {
   return (
     <div className="p-6">
       <div className="flex justify-between mb-8">
-        <Link to="/" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+        <Link
+          to="/"
+          className="text-indigo-600 hover:text-indigo-800 flex items-center"
+        >
           <FaArrowLeft className="mr-2" /> Home
         </Link>
-        <Link to="/saved" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+        <Link
+          to="/saved"
+          className="text-indigo-600 hover:text-indigo-800 flex items-center"
+        >
           Saved <FaArrowRight className="ml-2" />
         </Link>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {workouts.map((workout) => (
-          <WorkoutCard
-            key={workout.id || `${workout.workout}-${workout.intensity}`}
-            workout={workout}
-            onSave={onSave}
-          />
+          <WorkoutCard key={workout.id} workout={workout} onSave={onSave} />
         ))}
       </div>
     </div>

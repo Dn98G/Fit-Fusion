@@ -20,8 +20,8 @@ const QuoteCarousel = () => {
   }, []);
 
   return (
-    <div className="quote-carousel">
-      <p>{quotes[currentQuote]}</p>
+    <div className="quote-carousel flex justify-center items-center h-32 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg shadow-lg p-6 mx-4 mt-8">
+      <p className="text-white text-xl font-semibold text-center italic">{quotes[currentQuote]}</p>
     </div>
   );
 };

@@ -73,7 +73,7 @@ fit-fusion/
 3. **Run JSON Server**
 
    ```bash
-   npx json-server --watch db.json --port 3001
+   npx json-server --watch workouts.json --port 3001
    ```
 
 4. **Start development server**

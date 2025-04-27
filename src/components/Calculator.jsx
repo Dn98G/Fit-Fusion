@@ -28,23 +28,25 @@ export default function Calculator({ onRatingUpdate }) {
   const decrementHeight = () => setHeight(prev => Math.max(prev - 1, 100));
 
   return (
-    <div className="bmi-container">
-      <div className="bmi-card">
-        <h2>BMI Calculator</h2>
-        <div className="weight-age-container">
-          <div className="counter-card">
-            <h3>Weight</h3>
-            <div className="counter-buttons">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+      <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
+        <h2 className="text-2xl font-bold text-center mb-6 text-purple-600">BMI Calculator</h2>
+
+        <div className="flex justify-between gap-6 mb-6">
+          {/* Weight Card */}
+          <div className="flex-1 bg-purple-100 rounded-lg p-4 text-center">
+            <h3 className="text-lg font-semibold text-purple-700 mb-4">Weight</h3>
+            <div className="flex items-center justify-center space-x-4">
               <button
-                className="counter-button"
+                className="w-10 h-10 rounded-full bg-purple-500 text-white text-xl flex items-center justify-center hover:bg-purple-600"
                 onClick={decrementWeight}
                 aria-label="Decrease weight"
               >
                 -
               </button>
-              <span>{weight} kg</span>
+              <span className="text-lg font-medium">{weight} kg</span>
               <button
-                className="counter-button"
+                className="w-10 h-10 rounded-full bg-purple-500 text-white text-xl flex items-center justify-center hover:bg-purple-600"
                 onClick={incrementWeight}
                 aria-label="Increase weight"
               >
@@ -52,19 +54,21 @@ export default function Calculator({ onRatingUpdate }) {
               </button>
             </div>
           </div>
-          <div className="counter-card">
-            <h3>Height</h3>
-            <div className="counter-buttons">
+
+          {/* Height Card */}
+          <div className="flex-1 bg-purple-100 rounded-lg p-4 text-center">
+            <h3 className="text-lg font-semibold text-purple-700 mb-4">Height</h3>
+            <div className="flex items-center justify-center space-x-4">
               <button
-                className="counter-button"
+                className="w-10 h-10 rounded-full bg-purple-500 text-white text-xl flex items-center justify-center hover:bg-purple-600"
                 onClick={decrementHeight}
                 aria-label="Decrease height"
               >
                 -
               </button>
-              <span>{height} cm</span>
+              <span className="text-lg font-medium">{height} cm</span>
               <button
-                className="counter-button"
+                className="w-10 h-10 rounded-full bg-purple-500 text-white text-xl flex items-center justify-center hover:bg-purple-600"
                 onClick={incrementHeight}
                 aria-label="Increase height"
               >
@@ -73,14 +77,18 @@ export default function Calculator({ onRatingUpdate }) {
             </div>
           </div>
         </div>
-        <button className="calculate-button" onClick={calculateBMI}>
+
+        <button
+          className="w-full bg-purple-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition"
+          onClick={calculateBMI}
+        >
           Calculate BMI
         </button>
 
         {bmi && (
-          <div className="bmi-result">
-            <p>Your BMI: {bmi}</p>
-            <p>Rating: {rating}</p>
+          <div className="mt-6 bg-gray-100 rounded-lg p-4 text-center">
+            <p className="text-lg font-medium">Your BMI: <span className="text-purple-600">{bmi}</span></p>
+            <p className="text-lg font-medium">Rating: <span className="text-purple-600">{rating}</span></p>
           </div>
         )}
       </div>
