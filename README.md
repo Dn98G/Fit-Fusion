@@ -2,12 +2,6 @@
 
 **Fit Fusion** is a responsive React fitness web app that lets users calculate their BMI, get personalized workout recommendations, and save favorite workouts for later empowering users to make healther lifestyle choices.
 
-## Assignment
-
-**Eugene K** - Did the BMI calculator and the Workouts.json.  
- **Rahma M** - Did the routing and filled in the README file.
-**Cheruiyot K** - Did the fetching and saving workouts.
-**James K** - Did the overall styling and overall debugging.
 
 ---
 
@@ -29,7 +23,7 @@
 - **React Router** for navigation
 - **Vite** for fast development
 - **JSON Server** (`db.json`) to simulate a backend API
-- **Plain CSS** for styling (purple theme)
+- **Tailwind CSS** for styling (purple theme)
 - **React Icons** to allow arrow navigation to other sections.
 
 ---
@@ -43,13 +37,14 @@ fit-fusion/
 │   ├── components/
 │   │   ├── Calculator.jsx
 │   │   ├── NavBar.jsx
-        |
+        |   ProgressBar.jsx
+        |   QuoteCarousel.jsx
 │   │   ├── SavedWorkouts.jsx
 │   │   └── WorkoutSelector.jsx
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-├── db.json        # Workout data
+├── workouts.json        # Workout data
 └── README.md
 ```
 
@@ -89,7 +84,7 @@ fit-fusion/
 
 ## 🎨 Styling & Theme
 
-All styling is done with plain CSS in `src/index.css` and component-specific CSS files.
+All styling is done with Tilwind CSS in `src/index.css` and component-specific CSS files.
 
 - **Primary color**: Purple (`#6B21A8`)
 - **Accent color**: Lighter purple (`#A78BFA`) and white text
