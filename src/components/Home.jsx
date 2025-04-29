@@ -6,7 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 const Home = ({ handleProgress, progress }) => {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-50 min-h-screen py-10 px-4">
-      {/* Intro Section */}
+      {/* The Intro Section */}
       <section className="text-center mb-12">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-purple-600 mb-4">Welcome to Fit Fusion!</h1>
